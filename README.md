@@ -1,3 +1,5 @@
+Você pode [acessar o projeto aqui](https://clone-picpay.netlify.app/).
+
 # CLONE SITE PICPAY
 STATUS: EM DESENVOLVIMENTO
 
