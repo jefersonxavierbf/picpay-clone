@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'BRSonoma';
+    src: url('../fontes/BRSomona.otf' ) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* --------------- CABEÇALHO -------------- */
+body {
+    background: #EFF0E8;
+    height: 900px;
+}
+
+header {
+    padding: 14px 24px;
+    background: #238662;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+    font-weight: 500;
+    padding: 0 45px;
+} 
+
+.logo-picpay {
+    width: 115px;
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+}
+
+.menu > li > a:hover {
+    color: #86BAA7;
+}
+
+.menu-btns {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+    font-weight: 500;
+}
+
+.menu-btns:hover {
+    color: #86BAA7;
+}
+
+.menu-icones { 
+    width: 16px;
+    vertical-align: middle;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 9px;
+    overflow: hidden;
+}
+
+.sub-menu li:hover {
+    background: #f2f2f2;
+}
+
+.ativar-sub-menu {
+    display: block;
+}
+
+.sub-menu a {
+    color: #39464d;
+}
+
+.sub-menu li {
+    padding: 9px;
+}
+
+.btn-baixar-app {
+    color: #238662;
+    padding: 8.5px 64px;
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+}
+
+.btn-baixar-app:hover {
+    background: #F1F1F1;
+}
+
+@media(max-width: 1279px) {
+    .logo-picpay {
+        margin-left: 63px;
+    }
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0px;
+        right: 0;
+        background: #000000;
+        min-width: 386px;
+        padding: 10px;
+        height: 100vh;
+    }
+
+    .menu > li {
+        padding-bottom: 51px;
+        font-size: 20px;
+    }
+
+    .menu button {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+    }
+
+    .btn-baixar-app {
+        display: none;
+    }
+    
+}
+
+/* --------------- COFRINHOS PICPAY -------------- */
+.cofrinhos-picpay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 539px;
+    gap: 32px;
+}
+
+.descricao-cofrinhos-picapay {
+    margin-left: 69px;
+}
+
+.cofrinhos-picpay h1 {
+    font-size: 54px;
+    font-family: 'BRSonoma';
+    font-weight: bolder;
+    padding-top: 112px;
+    line-height: 60.75px;
+}
+
+.cofrinhos-picpay p {
+    padding-top: 29px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    padding-bottom: 40px;
+}
+
+.cofrinhos-picpay button {
+    color: #fff;
+    cursor: pointer;
+    background: #426dff;
+    border: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.6364px;
+    letter-spacing: 0.8px;
+    padding: 11px 32px;
+    border-radius: 12px;
+    
+}
+
+.cofrinhos-picpay button:hover {
+    background: #365ad6;
+}
+
+.cofrinhos-picpay img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media(max-width: 1279px) {
+    .cofrinhos-picpay h1 {
+        font-size: 44px;
+    }
+
+    .descricao-cofrinhos-picapay {
+        margin-left: 132px;
+    }
+    
+}
+
+/* --------------- CARTÃO PICPAY -------------- */
+.cartao-picpay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 436px;
+    gap: 32px;
+}
+
+.descricao-cartao-picapay {
+    margin-left: 33px;
+}
+
+.cartao-picpay h2 {
+    color: #11c56e;
+    font-size: 32px;
+    font-family: 'BRSonoma';
+    font-weight: bolder;
+    padding-top: 94px;
+    line-height: 36px;
+}
+
+.cartao-picpay p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 29.25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cartao-picpay img {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cartao-picpay button {
+    color: #fff;
+    cursor: pointer;
+    background: #426dff;
+    border: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 23.6364px;
+    letter-spacing: 0.8px;
+    padding: 7px 66px;
+    border-radius: 12px;
+    
+}
+
+.cartao-picpay button:hover {
+    background: #365ad6;
+}
+
+/* --------------- PIX PICPAY -------------- */
