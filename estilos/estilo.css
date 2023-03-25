@@ -30,6 +30,8 @@ body {
 header {
     padding: 14px 24px;
     background: #238662;
+    position: sticky;
+    top: 0;
 }
 
 nav {
