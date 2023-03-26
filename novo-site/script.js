@@ -1,6 +1,6 @@
 const menuBtns = document.querySelectorAll('.menu-btns');
 const subMenu = document.querySelectorAll('.sub-menu');
-const fechasMenuBtns = document.querySelectorAll('.fechas-btns-menu');
+const fechasMenuBtns = document.querySelectorAll('.fechas-menu-btns');
 
 menuBtns.forEach((btn) => {
     btn.addEventListener('click', (elemento) => {

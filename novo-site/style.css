@@ -31,17 +31,17 @@ nav {
     min-height: 71px;
 }
 
-.menu {
-    display: flex;
-    gap: 48px;
-}
-
 .logo-pipay > svg {
     vertical-align: middle;
 }
 
-.menu-hambuguer {
+.btn-mobile {
     display: none;
+}
+
+.menu {
+    display: flex;
+    gap: 48px;
 }
 
 .menu-btns {
@@ -53,7 +53,7 @@ nav {
     border: transparent;
 }
 
-.fechas-btns-menu {
+.fechas-menu-btns {
     transition: .3s ease;
 }
 
@@ -74,7 +74,6 @@ nav {
     background: #238662;
     border: none;
     border-radius: 12px;
-
 }
 
 .abrir-conta a {
@@ -97,9 +96,7 @@ nav {
     color: #9adbc2;
 }
 
-
 .sub-menu {
-    visibility: hidden; /* oculta sub menu */
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -107,6 +104,10 @@ nav {
     position: absolute;
     top: 72px;
     padding: 20px 17px;
+}
+
+.sub-menu {
+    display: none; /* oculta sub menu */
 }
 
 .sub-menu a {
@@ -118,9 +119,6 @@ nav {
 }
 
 /* Incio classs animação btns menu */
-.ativa-sub-menu {
-    visibility: visible;
-}
 
 .ativa-cor-btns-menu {
     color: #717171;
@@ -129,6 +127,11 @@ nav {
 .gira-fecha-btn-menu {
     transform: rotate(180deg);
 }
+
+.ativa-sub-menu {
+    display: flex;
+}
+
 /* fim class animação btns menu */
 
 @media(max-width: 1279px) {
@@ -136,7 +139,7 @@ nav {
         padding: 0 16px;
     }
 
-    .menu-hambuguer {
+    .btn-mobile {
         display: block;
     }
 
