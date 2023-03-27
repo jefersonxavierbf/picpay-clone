@@ -22,6 +22,7 @@ header {
     z-index: 999;
     top: 0;
     border-bottom: 1px solid #e8e8e8;
+    background: #fff;
 }
 
 nav {
@@ -104,6 +105,7 @@ nav {
     position: absolute;
     top: 72px;
     padding: 20px 17px;
+    background: #fff;
 }
 
 .sub-menu {
@@ -152,6 +154,10 @@ nav {
         display: flex;
     }
 
+    .ativar-altura-menu {
+        height: 100vh;
+    }
+
     header {
         padding: 0;
     }
@@ -176,8 +182,7 @@ nav {
         width: calc(100% - 16px);
         gap: 36px;
         flex-direction: column;
-        height: 100%;
-        min-height: calc(100vh - 204px);
+        height: calc(100vh - 132px);
         overflow-y: auto;
     }
 
@@ -213,4 +218,10 @@ nav {
         line-height: 27px;
         color: #000000;
     }
+}
+
+
+section {
+    height: 487px;
+    background: linear-gradient(270deg, rgb(219, 221, 209), rgb(190, 194, 180));
 }

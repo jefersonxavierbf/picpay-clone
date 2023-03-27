@@ -1,3 +1,4 @@
+const header = document.querySelector('header');
 const body = document.querySelector('body');
 const menu = document.querySelector('.menu');
 const menuBtns = document.querySelectorAll('.menu-btns');
@@ -29,6 +30,7 @@ menuBtns.forEach((btn) => {
 btnMobile.addEventListener('click', () => {
     if (btnMobile.classList.contains('ativar')) {
         btnMobile.classList.remove('ativar');
+        header.classList.add('ativar-altura-menu');
         body.classList.add('removerRolagem');
         fecharBtnMobile.classList.add('ativar');
         menu.classList.add('ativar-flex');
@@ -40,6 +42,7 @@ btnMobile.addEventListener('click', () => {
 fecharBtnMobile.addEventListener('click', () => {
     if (fecharBtnMobile.classList.contains('ativar')) {
         fecharBtnMobile.classList.remove('ativar');
+        header.classList.remove('ativar-altura-menu');
         body.classList.remove('removerRolagem');
         btnMobile.classList.add('ativar');
         menu.classList.remove('ativar-flex');
