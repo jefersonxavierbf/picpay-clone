@@ -35,7 +35,7 @@ nav {
     vertical-align: middle;
 }
 
-.btn-mobile {
+.btn-mobile, .fechar-btn-mobile {
     display: none;
 }
 
@@ -121,7 +121,7 @@ nav {
 /* Incio classs animação btns menu */
 
 .ativa-cor-btns-menu {
-    color: #717171;
+    color: #717171 !important;
 }
 
 .gira-fecha-btn-menu {
@@ -135,16 +135,82 @@ nav {
 /* fim class animação btns menu */
 
 @media(max-width: 1279px) {
-    header {
-        padding: 0 16px;
+    
+    .removerRolagem {
+        overflow-y: hidden;
     }
-
-    .btn-mobile {
-        display: block;
-    }
-
+    
     .menu, .abrir-conta, .acessar-blog {
         display: none;
     }
+
+    .ativar {
+        display: block; /* class revelar elementos */
+    }
+
+    .ativar-flex {
+        display: flex;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    nav {
+        padding: 0 16px;
+    }
+
+    .abrir-conta, .menu {
+        position: absolute;
+    }
+
+    .abrir-conta {
+        top: 72px;
+        width: calc(100% - 32px);
+    }
+
+    .menu {
+        top: 132px; /* temporário */
+        padding: 12px 0px;
+        padding-left: 4px;
+        width: calc(100% - 16px);
+        gap: 36px;
+        flex-direction: column;
+        height: 100%;
+        min-height: calc(100vh - 132px);
+        overflow-y: auto;
+    }
+
+    .menu-btns {
+        justify-content: space-between;
+        font-size: 20px;
+        width: 100%;
+        line-height: 48px;
+        color: #000000;
+    }
+
+    .fechas-menu-btns {
+        width: 24px;
+        height: 24px;
+        margin-right: 20px;
+    }
+
+    .acessar-blog {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .sub-menu {
+        gap: 20px;
+        position: static;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 16px;
+    }
     
+    .sub-menu a {
+        font-size: 18px;
+        line-height: 27px;
+        color: #000000;
+    }
 }
