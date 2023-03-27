@@ -182,7 +182,7 @@ nav {
         width: calc(100% - 16px);
         gap: 36px;
         flex-direction: column;
-        height: calc(100vh - 20vh);
+        height: calc(100vh - 25vh);
         overflow-y: auto;
     }
 
