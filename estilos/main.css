@@ -55,3 +55,43 @@
     width: 100%;
     display: block;
 }
+
+@media(max-width: 1023px) {
+
+    .abra-sua-conta {
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 34px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .texto-abra-sua-conta {
+        grid-column: span 4;
+        padding: 0 32px;
+    }
+
+    .texto-abra-sua-conta br {
+        display: none;
+    }
+
+    .imagem-abra-sua-conta {
+        grid-column: 2/4;
+    }
+    
+    .imagem-abra-sua-conta img {
+        padding: 0;
+    }
+    
+    .texto-abra-sua-conta h1 {
+        font-size: 32px;
+        line-height: 32px;
+        padding-bottom: 52px;
+    }
+    
+    .texto-abra-sua-conta a {
+        width: auto;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+}
+
