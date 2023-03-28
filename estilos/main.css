@@ -1,4 +1,57 @@
-section {
-    height: 487px;
+@font-face {
+    font-family: 'BRSomona';
+    src: url('/fontes/BRSomona.otf') format('truetype');
+}
+
+/*  ABRA SUA CONTA  */
+
+.abra-sua-conta {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
     background: linear-gradient(270deg, rgb(219, 221, 209), rgb(190, 194, 180));
+    padding: 0 32px;
+    
+}
+
+.texto-abra-sua-conta {
+    grid-column: span 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+}
+
+.texto-abra-sua-conta h1 {
+    font-family: 'BRSomona', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    color: #383227;
+    margin-top: -5px; /* ajuste posição */
+    padding-bottom: 54px;
+}
+
+.texto-abra-sua-conta a {
+    text-decoration: none;
+    color: #fff;
+    background: #238662;
+    width: fit-content;
+    align-items: center;
+    border-radius: 12px;
+    padding: 0px 32px;
+    display: flex;
+    gap: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: bold;
+}
+
+.imagem-abra-sua-conta {
+    grid-column: span 3;
+    padding-left: 5px;
+}
+
+.imagem-abra-sua-conta img {
+    width: 100%;
+    display: block;
 }
