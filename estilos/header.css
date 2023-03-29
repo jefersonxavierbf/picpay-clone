@@ -160,6 +160,8 @@ nav {
     header {
         padding: 0;
         padding: 0 16px;
+        position: fixed;
+        width: 100%;
     }
 
     .abrir-conta, .menu {
