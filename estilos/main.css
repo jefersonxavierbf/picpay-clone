@@ -11,7 +11,6 @@
     grid-template-columns: repeat(8, 1fr);
     background: linear-gradient(270deg, rgb(219, 221, 209), rgb(190, 194, 180));
     padding: 0 32px;
-    
 }
 
 .texto-abra-sua-conta {
@@ -47,6 +46,10 @@
     font-weight: bold;
 }
 
+.texto-abra-sua-conta a:hover {
+    background-color: #419B7A;
+}
+
 .imagem-abra-sua-conta {
     grid-column: span 3;
     padding-left: 5px;
@@ -61,9 +64,7 @@
 
     .abra-sua-conta {
         grid-template-columns: repeat(4, 1fr);
-        padding-top: 34px;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 34px 0px 0px 0px;
     }
 
     .texto-abra-sua-conta {
@@ -105,3 +106,5 @@
         width: 80%;
     }
 }
+
+/*  PICPAY CARD  */
