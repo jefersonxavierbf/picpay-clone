@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 900px; /*  código temporário cria barra de rolagem  */
+    padding-top: 72px; /* ajuste header fixed*/
 }
 
 ul {
@@ -15,8 +15,8 @@ ul {
 /*  MENU DE NAVEGAÇÃO  */
 
 header {
-    padding: 0 42px;
     position: fixed;
+    padding: 0 42px;
     width: 100%;
     z-index: 999;
     top: 0;

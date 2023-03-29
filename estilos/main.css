@@ -4,9 +4,7 @@
 }
 
 /*  ABRA SUA CONTA  */
-
 .abra-sua-conta {
-    margin-top: 72px; /* compensar 72px navgação position fixed */
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     background: linear-gradient(270deg, rgb(219, 221, 209), rgb(190, 194, 180));
@@ -26,7 +24,7 @@
     font-size: 48px;
     line-height: 48px;
     color: #383227;
-    margin-top: -5px; /* ajuste posição */
+    margin-top: -5px;
     padding-bottom: 54px;
 }
 
@@ -89,7 +87,7 @@
     }
 
     .imagem-abra-sua-conta {
-        grid-column: 1/5;
+        grid-column: span 4;
         display: flex;
         justify-content: center;
         padding: 0 16px;
@@ -108,3 +106,81 @@
 }
 
 /*  PICPAY CARD  */
+
+.picpay-card {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background: #238662;
+    padding: 0px 32px;
+}
+
+.imagem-picpay-card {
+    grid-column: span 3;
+    position: relative;
+}
+
+.imagem-picpay-card img {
+    top: -27px;
+    position: absolute;
+    max-width: 100%;
+    display: block;
+    padding-left: 17px;
+}
+
+.texto-picpay-card {
+    grid-column: span 5;
+    color: #fff;
+    padding-left: 7.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.texto-picpay-card h2 {
+    padding-top: 56px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.texto-picpay-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.texto-picpay-card a {
+    display: block;
+    width: fit-content;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    text-decoration: none; 
+    font-size: 16px;
+    line-height: 44px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 0px 32px;
+    margin-bottom: 104px;
+}
+
+.texto-picpay-card a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+@media(max-width: 1023px) {
+    .picpay-card {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0px 28px;
+    }
+
+    .texto-picpay-card {
+        padding: 0;
+    }
+
+    .texto-picpay-card a {
+        width: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
