@@ -116,12 +116,11 @@
 
 .imagem-picpay-card {
     grid-column: span 3;
-    position: relative;
 }
 
 .imagem-picpay-card img {
     top: -27px;
-    position: absolute;
+    position: relative;
     max-width: 100%;
     display: block;
     padding-left: 17px;
@@ -130,7 +129,7 @@
 .texto-picpay-card {
     grid-column: span 5;
     color: #fff;
-    padding-left: 7.5px;
+    padding-left: 2px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -174,13 +173,30 @@
         padding: 0px 28px;
     }
 
+    .imagem-picpay-card {
+        grid-column: span 4;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagem-picpay-card img {
+        width: 70%;
+    }
+
     .texto-picpay-card {
-        padding: 0;
+       grid-row-start: 1;
     }
 
     .texto-picpay-card a {
         width: auto;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 599px) {
+    .imagem-picpay-card img {
+        width: 100%;
+        padding-left: 0px;
     }
 }
